@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures</title>
+    <link rel="stylesheet" href="./css/page3.css" />
+  </head>
+
+  <body>
+    <nav id="navigation">
+      <ol>
+        <li class="navBar"><a href="index.html">Home</a></li>
+        <li class="navBar"><a href="gif.html">Gif </a></li>
+        <li class="navBar"><a href="contact.html">Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <div class="buttonRefresh">
+        <input type="button" value="Refresh" id="refresh" />
+      </div>
+
+      <div class="pictures"></div>
+    </main>
+
+    <script>
+      let div = document.querySelector(".pictures");
+      div.innerHTML +=
+        '<img src="./image2/' + Math.round(Math.random() * 9 + 2) + '.jpg" />';
+
+      let buttonRefresh = document.getElementById("refresh");
+      buttonRefresh.addEventListener("click", () => {
+        window.location.reload();
+      });
+    </script>
+
+    <!-- https://www.pexels.com/fr-fr/
+Photographies source-->
+  </body>
+</html>

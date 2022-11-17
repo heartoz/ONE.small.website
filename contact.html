@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/page4.css"/>
+  </head>
+
+  <body>
+    <nav id="navigation">
+      <ol>
+        <li class="navBar"><a href="index.html">Home</a></li>
+        <li class="navBar"><a href="gif.html">Gif</a></li>
+        <li class="navBar"><a href="pictures.html">Pictures</a></li>
+      </ol>
+    </nav>
+
+    <main class="main__content">
+      <div class="contact">
+        <h1>
+          Send your beautiful gif or royalty free picture
+          <img src="./home/heart.gif" alt="heart gif pixel" />
+        </h1>
+
+        <form>
+          <!-- si une page pour récupérer les data était dispo : action="lien.html" méthode "post"-->
+
+          <div>
+            <label for="pseudo">Pseudo</label>
+            <input
+              type="text"
+              id="pseudo"
+              name="pseudo"
+              placeholder="SunMoon"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="sunmoon@hotmail.com"
+              required
+            />
+          </div>
+          <div></div>
+          <div>
+            <label for="message">Link of your gif/photo</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="https://64.media.tumblr.com/ddebd76da2bd3cdc42f6e683e397b16f/tumblr_pfj7e6l4NE1v9rxp9_500.gif"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" id="button" value="Send your message">
+           
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
